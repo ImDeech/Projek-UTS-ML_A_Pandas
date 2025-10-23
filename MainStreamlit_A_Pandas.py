@@ -33,7 +33,7 @@ if selected == 'Klasifikasi':
 
     #Prediksi
     if st.button("Prediksi"):
-        input_data = np.array([[magnitude, depth, latitude, longitude]])
+        input_data = np.array([[magnitude, cdi, mmi, sig, depth, latitude, longitude]])
         prediction = model.predict(input_data)
         result = "Berpotensi Tsunami 🌊" if prediction[0] == 1 else "Tidak Berpotensi Tsunami ✅"
         st.success(f"Hasil Prediksi: **{result}**")

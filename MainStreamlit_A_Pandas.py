@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 
 #Navigasi sidebar
 with st.sidebar:
-    selected = option_menu ('UTS Machine Learning 24/25',
+    selected = option_menu ('UTS Machine Learning 25/26',
 ['Klasifikasi',
 'Regresi'],
 default_index=0)

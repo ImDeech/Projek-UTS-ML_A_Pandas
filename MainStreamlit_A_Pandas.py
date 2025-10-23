@@ -24,6 +24,9 @@ if selected == 'Klasifikasi':
     #Input manual fitur
     st.write('Input data')
     magnitude = st.number_input("Magnitudo", min_value=0.0, step=0.1)
+    cdi = st.number_input("CDI (Community Determined Intensity)", min_value=0.0, step=0.1)
+    mmi = st.number_input("MMI (Modified Mercalli Intensity)", min_value=0.0, step=0.1)
+    sig = st.number_input("Significance (Skor Signifikansi Gempa)", min_value=0.0, step=1.0)
     depth = st.number_input("Depth", min_value=0.0, step=1.0)
     latitude = st.number_input("Latitude", min_value=-90.0, max_value=90.0, step=0.1)
     longitude = st.number_input("Longitude", min_value=-180.0, max_value=180.0, step=0.1)

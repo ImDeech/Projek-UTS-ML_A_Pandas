@@ -47,4 +47,4 @@ if selected == 'Regresi':
 
     if st.button("Hitung Estimasi Dampak"):
         impact_score = magnitude * (100 - (depth / 10))
-        st.write(f"Estimasi Dampak (skor simulasi): **{impact_score:.2f}**")
+        st.write(f"Estimasi Dampak: **{impact_score:.2f}**")
